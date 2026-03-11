@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: students-backend
+    name: amine-backend
     env: node
     region: oregon
     buildCommand: npm install && npm run build
@@ -11,5 +11,4 @@ services:
       - key: PORT
         value: 3001
       - key: CLIENT_ORIGIN
-        # Replace with your Netlify frontend URL after deployment
-        value: https://your-frontend.netlify.app
+        sync: false
